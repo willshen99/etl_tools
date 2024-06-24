@@ -20,6 +20,7 @@ usage() {
     echo "  --truncate                Truncate table before loading"
     echo "  --header                  Has header in CSV files"
     echo "  --no-password             Never issue a postgres password prompt. If the server requires password authentication and a password is not available by other means such as a .pgpass file, the connection attempt will fail. This option can be useful in batch jobs and scripts where no user is present to enter a password."
+    echo "  -h                        Print out this help page"
     exit 1
 }
 
@@ -76,7 +77,6 @@ if [ -z "$HOST" ]; then
     usage
 fi
 if [ -z "$DATABASE" ]; then
-    echo "Hello"
     echo "Error: PostgreSQL database (-D or --database) is required."
     usage
 fi
