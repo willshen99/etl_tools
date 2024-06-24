@@ -98,6 +98,7 @@ fi
 if [ "$NO_PASSWORD" = "false" ]; then
     read -s -p "Enter Postgres Password for User <$USER>: " PASSWORD
     export PGPASSWORD=$PASSWORD
+    echo -e "\n"
 fi
 
 
