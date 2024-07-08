@@ -49,10 +49,10 @@ while [[ "$#" -gt 0 ]]; do
             shift ;;
         --truncate) 
             TRUNCATE_BEFORE_LOAD="true"
-            shift ;;
+            ;;
         --header) 
             HAS_HEADER="true"; 
-            shift ;;
+            ;;
         --delimiter) 
             DELIMITER="$2"; 
             shift ;;
